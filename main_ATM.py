@@ -6,7 +6,7 @@ class ATM:
     def __init__(self, root):
         self.root = root
         self.root.title("ATM")
-        self.root.geometry("400x600")
+        self.root.geometry("300x300")
         self.root.resizable(False, False)
         
         # inisialisasi current_account
@@ -74,7 +74,6 @@ class ATM:
 
         ttk.Button(frame_atm_operasi, text='Tarik Tunai', command=self.show_withdraw).pack(side='left', padx=5)
         ttk.Button(frame_atm_operasi, text='Setor Tunai', command=self.show_deposit).pack(side='left', padx=5)
-        ttk.Button(frame_atm_operasi, text='Cek Saldo', command=self.check_balance).pack(side='left', padx=5)
         ttk.Button(frame_atm_operasi, text='Keluar', command=self.logout).pack(side='left', padx=5)
 
         # frame untuk membuat akun baru
